@@ -29,7 +29,7 @@ This project is a simple **Language Translation Web Application** built using **
 ### Steps to Run:
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/YourUsername/CodeAlpha_LanguageTranslationTool.git
+    git clone https://github.com/ashubourai/CodeAlpha_LanguageTranslationTool.git
     cd CodeAlpha_LanguageTranslationTool
     ```
 
