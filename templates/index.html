@@ -103,11 +103,33 @@
         {% if translated_text %}
         <div class="alert mt-4">
             <p><strong>Detected Language:</strong> {{ detected_language }}</p>
-            <p><strong>Translation:</strong> {{ translated_text }}</p>
+            <p><strong>Translation:</strong> <span id="translatedText">{{ translated_text }}</span></p>
+            <button class="btn btn-secondary mt-2" onclick="copyText()">Copy Translation</button>
+            <button class="btn btn-success mt-2" onclick="speakText()">Speak Translation</button>
         </div>
         {% endif %}
     </div>
 
     <div class="watermark">© CodeAlpha Internship</div>
+
+    <!-- JavaScript for Copy & Text-to-Speech -->
+    <script>
+        function copyText() {
+            const translation = document.getElementById("translatedText").innerText;
+            if (translation) {
+                navigator.clipboard.writeText(translation);
+                alert("Translated text copied to clipboard!");
+            }
+        }
+
+        function speakText() {
+            const translation = document.getElementById("translatedText").innerText;
+            if (translation) {
+                const speech = new SpeechSynthesisUtterance(translation);
+                speech.lang = "{{ target_language }}";
+                window.speechSynthesis.speak(speech);
+            }
+        }
+    </script>
 </body>
 </html>
