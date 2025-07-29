@@ -15,7 +15,7 @@ This project is a simple **Language Translation Web Application** built using **
 ## 🚀 Demo
 🔗 **GitHub Repository**: https://github.com/ashubourai/CodeAlpha_LanguageTranslationTool
 
-📹 **Demo Video Link**: Coming Soon (Will be updated after LinkedIn Post)
+📹 **Demo Video Link**: https://www.linkedin.com/posts/kuldeep-bourai-836949325_aiinternship-python-flask-activity-7356040394792390657-9hkS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIwAWoBOTJEg4PYs73WBoksiy2sv_P8KXs
 
 ---
 
